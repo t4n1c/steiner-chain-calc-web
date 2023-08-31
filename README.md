@@ -1,2 +1,2 @@
 # Steiner Chain Calculator For Website
-[click here](./src/index.html)
+[click here](./dist/index.html)
