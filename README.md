@@ -1,1 +1,1 @@
-# steiner-chain-calc-web
+# Steiner Chain Calculator For Website

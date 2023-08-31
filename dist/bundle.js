@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=document.getElementById("output");e&&(e.innerHTML="Hello World!")})();
