@@ -1,0 +1,102 @@
+body {
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+.app {
+    display: flex;
+}
+
+/* field */
+
+.field {
+    height: 100vh;
+}
+
+.tab-field {
+    width: 72px;
+    min-width: 56px;
+    background-color: rgb(211, 211, 211);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 4px 5px 0 rgba(0, 0, 0, .14);
+}
+
+.param-field {
+    width: 300px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 4px 5px 0 rgba(0, 0, 0, .14);
+}
+
+.canv-field {
+    flex: 1;
+}
+
+/* tabs */
+
+.tabs {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-tab {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+.tab-name {
+    font-size: 14px;
+}
+
+/* parameter */
+
+.param {
+    margin: 30px 15px;
+}
+
+.param-name {
+    font-size: 18px;
+}
+
+.param-slider {
+    width: 100%;
+}
+
+.param-slider::-webkit-slider-runnable-track {
+    background: rgb(199, 199, 199);
+    height: 8px;
+    border-radius: 8px;
+}
+
+/* Thumb: Chrome, Safari, Opera, Edge Chromium */
+.param-slider::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    margin-top: -4px;
+    /* 位置の調整が必要 */
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Track: Firefox */
+.param-slider::-moz-range-track {
+    background: rgb(199, 199, 199);
+    height: 8px;
+    border-radius: 8px;
+}
+
+/* Thumb: Firefox */
+.param-slider::-moz-range-thumb {
+    cursor: pointer;
+    border: none;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}

@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
-    <title>Hello typescript</title>
+    <title>Steiner Chain Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
 </head>
 
 <body>
-    <div id="output"></div>
+    <div class="app">
+        <div id="tabField" class="field tab-field">
+            <div class="tabs">
+                <button type="button" id="mainTab" class="btn-tab">
+                    <img class="tab-img" src="./img/RightBtn.png" alt="mainTabImg" width="42" height="42">
+                    <div class="tab-name">Steiner<br>Chain</div>
+                </button>
+                <button type="button" id="settingsTab" class="btn-tab">
+                    <img class="tab-img" src="./img/Settings.png" alt="settingsTabImg" width="42" height="42">
+                    <div class="tab-name">Settings</div>
+                </button>
+            </div>
+        </div>
+        <div id="parameterField" class="field param-field">
+            <div class="param">
+                <div class="param-name">Radius of outer circle</div>
+                <input type="range" id="slider-outer" class="param-slider">
+            </div>
+            <div class="param">
+                <div class="param-name">Radius of inner circle</div>
+                <input type="range" id="slider-inner" class="param-slider">
+            </div>
+            <div class="param">
+                <div class="param-name">Radius of r1 circle</div>
+                <input type="range" id="slider-r1" class="param-slider">
+            </div>
+            <div class="param">
+                <div class="param-name">Difference</div>
+                <input type="range" id="slider-difference" class="param-slider">
+            </div>
+            <div class="param">
+                <div class="param-name">Number of circles</div>
+                <input type="range" id="slider-circlenum" class="param-slider">
+            </div>
+            <div class="param">
+                <div class="param-name">Number of revolutions</div>
+                <input type="range" id="slider-revnum" class="param-slider">
+            </div>
+        </div>
+        <div id="canvasField" class="field canv-field">
+            <canvas></canvas>
+        </div>
+    </div>
     <script src="bundle.js"></script>
 </body>
 
